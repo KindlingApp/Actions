@@ -1,0 +1,26 @@
+{
+    "name": "kindling/actions",
+    "description": "Wrapper around Spatie Queueable Actions, but some niceness",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Huggins",
+            "email": "andrewhuggins@gmail.com"
+        }
+    ],
+    "require": {
+        "spatie/laravel-queueable-action": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kindling\\Actions\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kindling\\Actions\\Providers\\KindlingActionsProvider"
+            ]
+        }
+    }
+}

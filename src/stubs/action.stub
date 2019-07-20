@@ -1,0 +1,15 @@
+<?php
+
+namespace DummyNamespace;
+
+class DummyClass
+{
+    use QueueableAction;
+
+    public function __construct() {
+    }
+
+    public function execute() {
+        // The business logic goes here, this can be executed in an async job.
+    }
+}
